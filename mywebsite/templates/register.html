@@ -8,19 +8,18 @@
 </head>
 <body>
 
-
 <form method="POST" action="">
     <h2>REGISTRATION</h2><br><br>
     <div class="user">
     {% csrf_token %}
     {{form.username.label}}
-    {{form.username}}<br>
+    {{form.username}}<br><br>
 
     {{form.email.label}}
-    {{form.email}}<br>
+    {{form.email}}<br><br>
 
     {{form.password1.label}}
-    {{form.password1}}<br>
+    {{form.password1}}<br><br>
 
     {{form.password2.label}}
     {{form.password2}}<br><br>
